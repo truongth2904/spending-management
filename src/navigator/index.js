@@ -1,7 +1,7 @@
 ﻿import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import {screens} from '../constants/screenNames';
+import screens from '../constants/screenNames';
 import {NavigationServices} from '../utils';
 
 import HomeContainer from '../screens/home/home.container';
@@ -12,7 +12,7 @@ const MyStack = () => {
   return (
     <StackFlow.Navigator
       initialRouteParams={{transition: 'fade'}}
-      initialRouteName="Splash">
+      initialRouteName={screens.SPLASH}>
       <StackFlow.Screen
         name={screens.SPLASH}
         component={Splash}

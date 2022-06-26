@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {NavigationServices} from '../utils';
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {screens} from '../constants/screenNames';
+import screens from '../constants/screenNames';
 import AnimatedLottieView from 'lottie-react-native';
 import {splashScreen} from '../assets/images';
 import colors from '../constants/colors';
@@ -19,7 +19,7 @@ const Splash = () => {
         source={splashScreen}
         autoPlay
         loop={false}
-        speed={0.8}
+        speed={1.05}
         onAnimationFinish={onAnimationFinish}
       />
     </View>

@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <>
-      <StatusBar backgroundColor={colors.green} barStyle={'dark-content'} />
+      <StatusBar backgroundColor={colors.statusBar} barStyle={'dark-content'} />
       <Root />
     </>
   );
